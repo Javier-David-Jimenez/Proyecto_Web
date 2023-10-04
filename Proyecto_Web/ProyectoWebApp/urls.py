@@ -16,4 +16,5 @@ urlpatterns = [
     
 ]
 
+#url para los archivos media para poder verlos durante el desarrollo. no apto para producción
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
