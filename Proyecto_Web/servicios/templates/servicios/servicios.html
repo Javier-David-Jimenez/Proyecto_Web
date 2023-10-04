@@ -5,13 +5,22 @@
 
     {% for servicio in servicios %}
 
-<div><p>
 
-    <h2 style="color: white;"> {{servicio.titulo}} </h2>
-    <p style="color: white;"> {{servicio.contenido}} </p>
-    <p> <img src="{{servicio.imagen.url}}"> </p>
 
-</div></p>
+    <section class="page-section clearfix">
+        <div class="container">
+          <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{servicio.imagen.url}}" alt="" ">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4" >
+                <span class="section-heading-lower" style="float: right;">{{servicio.titulo}}</span>
+                <span class="section-heading-upper" style="float: right;">{{servicio.contenido}}</span>
+              </h2>
+        
+            </div>
+          </div>
+        </div>
+      </section>
 
     {% endfor %}
 
