@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ProyectoWebApp.urls')),
     path('servicios/', include('servicios.urls')),
+    path('blog/', include('blog.urls')),
 ]
 
 # con path('ProyectoWebApp/', include('PreoyectoWebapp.urls')), enlazamos a la urls del proyecto
