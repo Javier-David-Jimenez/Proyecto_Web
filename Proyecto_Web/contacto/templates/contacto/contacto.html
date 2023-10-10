@@ -7,6 +7,9 @@
     {% if "valido" in request.GET %}
 
         <p style = "color: white;"> Información enviada correctamenete, Gracias </p>
+    {% elif "novalido" in request.GET  %}
+        
+        <p style = "color: white;"> Algo salio mal, vuelva a itroducir la información, Gracias </p>
 
     {% endif %}
     
