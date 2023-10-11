@@ -1,0 +1,30 @@
+{% extends "ProyectoWebApp/base.html" %}
+{% load static %}
+{% block content %}
+
+{% comment %} generamos un class container y el row para que haya filas {% endcomment %}
+<div class="container">
+    <div class="row">
+
+{% for producto in productos %}
+
+        <div class="col-md-3">
+{% comment %} el  class="col-md-3" hace que tengamos 4 columnas en el grid {% endcomment %}
+        <div class="card" style= "width: 100%; margin: 5px 5px">
+            <img src = "{{producto.imagen.url}}" class="card-img-top">
+            <div class="card-body" style="text-align: center;">
+                <h7 class="card-title">{{producto.nombre}}</h7>
+                <p class="card-text">{{producto.precio}}&nbsp; €</p>
+{% comment %} class card le da el formato de tarjeta asi podemso escribirle
+            class card-body para definir lo que escribiremos en el card y su estilo
+            
+            {% endcomment %}
+        </div>
+
+        </div>
+    </div>
+
+{% endfor %}
+    </div>
+</div>
+{% endblock %}
