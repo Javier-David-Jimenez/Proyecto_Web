@@ -25,6 +25,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('contacto/', include('contacto.urls')),
     path('tienda/', include('tienda.urls')),
+    path('carro/', include('carro.urls')),
 ]
 
 # con path('ProyectoWebApp/', include('PreoyectoWebapp.urls')), enlazamos a la urls del proyecto
