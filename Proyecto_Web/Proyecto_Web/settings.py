@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'contacto',
     'tienda',
     'carro',
+    'autenticacion',
+    'crispy_forms',
+    "crispy_bootstrap4",
     
 ]
 
@@ -144,3 +147,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "djangomaster2023@gmail.com"
 EMAIL_HOST_PASSWORD = "ssitkdhdijxvxsvb"
 
+
+# es ppara usar el crispy con bbootstrap
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
