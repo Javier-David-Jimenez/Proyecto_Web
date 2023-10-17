@@ -9,8 +9,12 @@
         <p style="color: white;">Total: {{importe_total_carro}} €</p> 
         hicimos  esto para ver en pruebas luego lo eliminamos y lo haremos desde widget
         {% endcomment %}
+        {% if request.user.is_authenticated %}
 
-        {% include "carro/widget.html" %}
+            {% include "carro/widget.html" %}
+        {% else %}
+            <div class="alert alert-danger text-center">Logea para ver importe del carro</div>
+        {% endif%}
 
     </div>
 
