@@ -3,14 +3,14 @@
 class Carro:
     def __init__(self, request):
         
-        self.request = request
+        """self.request = request
         self.session = request.session
         carro = self.session.get("carro")
         
         # si no existe carro lo creamos  con un diccionario si existe cogemos el que habia
         if not carro:
            carro = self.session["carro"] = {}
-      
+      """
         self.carro = carro
         
         
