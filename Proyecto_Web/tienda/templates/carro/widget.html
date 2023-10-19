@@ -41,7 +41,7 @@
                             Sin Productos
 
                         </div>
-
+                    </td>
 
                 </tr>     
             {% endif %}
@@ -51,9 +51,19 @@
             <tr>
                 <td colspan="3">
                     Total: {{importe_total_carro}} €
+                    <!-- que se encuentra en el context processor-->
+                </td>
 
             </tr>
-
+            {% if request.session.carro.items %}
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <a href="#" class="btn btn-success">Hacer Pedido<a>
+                </td>
+            <!-- La idea es que el boton de hacer pedido no aparezca si no hay 
+                articulos en el carro-->
+            </tr>
+            {% endif %}
         </tfoot>
 
 </table>
